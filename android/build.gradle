@@ -33,5 +33,5 @@ android {
 
 dependencies {
     implementation 'com.facebook.react:react-native:+'
-//    implementation 'com.google.android.gms:play-services-ads:17.1.2'
+    api 'com.google.android.gms:play-services-ads:17.1.2'
 }
