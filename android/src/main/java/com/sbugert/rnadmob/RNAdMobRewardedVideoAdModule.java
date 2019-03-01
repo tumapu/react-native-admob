@@ -138,6 +138,7 @@ public class RNAdMobRewardedVideoAdModule extends ReactContextBaseJavaModule imp
 
     @ReactMethod
     public void requestAd(final Promise promise) {
+        if (getCurrentActivity() == null) return;
         new Handler(Looper.getMainLooper()).post(new Runnable() {
             @Override
             public void run() {
